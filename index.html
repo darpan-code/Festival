@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web-page for festival</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: "Sofia", sans-serif;
+        }
+
+        .title {
+            font-size: 30px;
+
+        }
+
+        p {
+            padding: 10px;
+            margin: 0;
+        }
+
+        .nav-bar {
+            background-color: rgb(94, 94, 194);
+            color: white;
+            /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+            font-size: 18px;
+            /* font-weight: bold; */
+            text-align: center;
+            padding: 10px 0px 10px 0px;
+            /* cursor: pointer; */
+
+        }
+
+        .nav-page {
+            /* text-decoration: none; */
+            padding-left: 2vw;
+        }
+
+        a {
+            text-decoration: none;
+            color: whitesmoke;
+        }
+
+        .form {
+            /* display: inline-block; */
+            float: right;
+            margin-right: 2vw;
+        }
+
+        .nav-search {
+
+            border: none;
+            border-radius: 10px;
+            padding: 3px 0px 3px 5px;
+        }
+
+        .nav-search_button {
+            border-radius: 10px;
+            border: none;
+            padding: 3px 5px 3px 5px;
+            cursor: pointer;
+        }
+
+        a:hover{
+            color: rgb(235, 155, 238);
+        }
+        .vdo {
+            text-align: center;
+            display: inline-block;
+        }
+
+      /* .container {
+            position: relative;
+             text-align: center; 
+            color: white;
+            display: inline-block;
+          
+
+        }*/
+
+        /* img {
+            padding: 12px 10px 10px 0px;
+            width: 400px;
+            height: 280px;
+
+        } */
+
+        /* .centered {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        } */
+
+      /*  .container:hover {
+             width: 400px; 
+            height: 280px;
+             text-shadow: 5px 0 5px #000000b9; 
+
+        }*/
+
+
+
+
+        .hover-zoom {
+            display: inline-block;
+            margin: 10px;
+            padding: 12px 10px 0px 0px;
+            width: 400px;
+            height: 280px;
+            -webkit-transition: all 0.3s ease-in-out;
+            transition: all 0.3s ease-in-out;
+            background-size: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-color: gray;
+            position: relative;
+            font-size: 0px;
+        }
+
+        .hover-zoom:hover {
+            background-size: 120%;
+            font-size: 50px;
+            cursor: pointer;
+        }
+
+        .hover-zoom p {
+            position: absolute;
+            bottom: 0;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100%;
+            color: white;
+            text-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+            /* background: rgba(0, 0, 0, 0.4); */
+            padding: 0.5em;
+            margin: 0;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- title for the Web-page -->
+
+    <div class="title">
+        <p>Festival</p>
+    </div>
+
+    <!-- navigation bar for Web-page -->
+    <div class="nav-bar">
+
+
+        <span class="nav-page"><a href="index.html" target=_blank>Home</a></span>
+        <span class="nav-page"><a href="holi.html" target=_blank>Holi</a></span>
+        <span class="nav-page"><a href="durga_puja.html" target=_blank>Durga Puja</a></span>
+        <span class="nav-page"><a href="eid.html" target=_blank>Eid</a></span>
+        <span class="nav-page"><a href="diwali.html" target=_blank>Diwali</a></span>
+        <span class="nav-page"><a href="christmas.html" target=_blank>Christmas</a></span>
+        <span class="nav-page"><a href="guru_nanak.html" target=_blank>Guru nanak Jayanti</a></span>
+        <form action="#" class="form">
+            <input class="nav-search" type="text" placeholder="Search">
+            <button type="button" class="nav-search_button"><i class="fa fa-search"></i></button>
+        </form>
+    </div>
+
+
+    <div class="vdo">
+        
+        
+            <div class="hover-zoom" style="background-position: center center; background-image:url(holi.jpg)">
+                <a href="holi.html" target=_blank><p class="centered">Holi</p></a>
+            </div>
+        
+
+        
+            <div class="hover-zoom" style="background-position: center center; background-image:url(Durga\ puja.jpg)">
+                <a href="durga_puja.html" target=_blank><p class="centered">Durga Puja</p></a>
+            </div>
+        
+
+        
+            <div class="hover-zoom" style="background-position: center center; background-image:url(eid.jpg)">
+                <a href="eid.html" target=_blank><p class="centered">Eid</p></a>
+            </div>
+        
+
+        
+            <div class="hover-zoom" style="background-position: center center; background-image:url(diwali.jpg)">
+                <a href="diwali.html" target=_blank><p class="centered">Diwali</p></a>
+            </div>
+        
+
+        
+            <div class="hover-zoom" style="background-position: center center; background-image:url(Christmas.jpg)">
+                <a href="christmas.html" target=_blank><p class="centered">Christmas</p></a>
+            </div>
+        
+
+        
+            <div class="hover-zoom" style="background-position: center center; background-image:url(guru\ nanak.jpg)">
+                <a href="guru_nanak.html" target=_blank><p class="centered">Guru nanak Jayanti</p></a>
+            </div>
+        
+    </div>
+
+   
+</body>
+
+</html>
